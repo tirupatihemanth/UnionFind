@@ -2,4 +2,4 @@ UnionFind is an algorithm that is used to solve the connectivity problem.  In th
 The order of efficiency is as follows from lower efficiency to higher efficiency: 
 QucikFind.java=>QuickUnion.java=>WeightedQuickUnion.java=>WeightCompressedQuickUnion.java
 In QuickFind.java we have N*N array access for a problem of size N in union method this has been improved by implementing trees and roots concept in QuickUnion.java and this has been further improved by implementing our intuition that trees are more nearer to the root if smaller trees are joined to the roots of larger trees rather than the viceversa and this is further improved by implementing tree compression in the algorithm.,
-For further clarifications please have loot at <a href="https://neon001.blogspot.in/2014/07/union-find-algorithm-and-improving-it.html" target = "blank">my blog<\a>
+For further clarifications please have loot at <a href="https://neon001.blogspot.in/2014/07/union-find-algorithm-and-improving-it.html" target = "blank">my blog</a>
