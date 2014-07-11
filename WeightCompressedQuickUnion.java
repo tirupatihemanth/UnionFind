@@ -1,4 +1,4 @@
-
+//This is the most efficient version of UnionFind Algorithm that I have implemented in this UnionFind repository
 public class WeightCompressedQuickUnion {
 	int arr[];
 	int size[];
@@ -13,6 +13,7 @@ public class WeightCompressedQuickUnion {
 		}
 	}
 	private int root(int x){
+		//Here is the place where I have used path compression to keep the trees almost flat
 		while(arr[x]!=x){
 			arr[x]=arr[arr[x]];
 			x=arr[x];
@@ -23,6 +24,7 @@ public class WeightCompressedQuickUnion {
 		return(root(x)==root(y));
 	}
 	public void union(int x,int y){
+		//Here is the place where I have implemented weighting of trees
 		int rootx = root(x);
 		int rooty = root(y);
 		if(size[rootx]<size[rooty]){

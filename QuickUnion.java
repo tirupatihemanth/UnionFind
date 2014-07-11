@@ -1,4 +1,4 @@
-
+//This is an improved version of UnionFind Algorithm when compared to QuickFind
 public class QuickUnion {
 	int arr[];
 	public QuickUnion(int n){
@@ -8,6 +8,7 @@ public class QuickUnion {
 		}
 	}
 	private int root(int p){
+		//This function is used to return the root of the element in a tree
 		while(arr[p]!=p){
 			p=arr[p];
 		}
@@ -17,6 +18,7 @@ public class QuickUnion {
 		return(root(x)==root(y));
 	}
 	public void union(int x,int y){
+		//Unlike in the QuickFind here we just assign the root of the element to a different root to connect
 		if (root(x)==root(y))
 				return;
 		int rootx = root(x);

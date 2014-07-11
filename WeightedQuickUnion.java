@@ -1,5 +1,5 @@
-
-//I have used only in this class array indicies started from 1 only for the ease to use in Percolation class
+//This further improved version of UnionFind Algorithm when compared to QuickFind and QuickUnion
+//I have used only in this class array indicies started from 1 only for the ease to use in Percolation class for the people in git make sure that you have a look at my Percolation repository where I have implemented UnionFind Algorithm for a percolation problem
 public class WeightedQuickUnion {
 	int arr[];
 	int size[];
@@ -23,6 +23,7 @@ public class WeightedQuickUnion {
 		return(root(x)==root(y));
 	}
 	public void union(int x,int y){
+		//In this method that weighting takes place make sure you understand this method properly
 		int rootx = root(x);
 		int rooty = root(y);
 		if(rootx == rooty)
